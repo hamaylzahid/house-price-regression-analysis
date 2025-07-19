@@ -1,6 +1,6 @@
-<h1 align="center">🏡 House Price Regression Analysis – Final Project</h1>
+<br><h1 align="center">🏡 House Price Regression Analysis – Final Project</h1>
 
-<p align="center"><i>Built as part of IBM's <b>Data Analysis with Python</b> course under the Skills Network program</i></p>
+<p align="center"><i>Built as part of IBM's <b>Data Analysis with Python</b> course under the Skills Network program</i></p><br>
 
 <p align="center">
   <a href="LICENSE">
@@ -44,7 +44,7 @@ This project follows practical data science workflows and showcases clean, inter
 
 ---
 
-<h2 align="center">📌 Features</h2>
+<br><h2 align="center">📌 Features</h2><br>
 
 <ul>
   <li>✅ Real-world dataset from <strong>King County House Sales</strong></li>
@@ -57,7 +57,7 @@ This project follows practical data science workflows and showcases clean, inter
 
 ---
 
-<h2 align="center">📖 Table of Contents</h2>
+<br><h2 align="center">📖 Table of Contents</h2><br>
 
 - [🧠 Project Overview](#-project-overview)
 - [🎯 Objectives](#-objectives)
@@ -72,7 +72,7 @@ This project follows practical data science workflows and showcases clean, inter
 
 ---
 
-<h2 align="center">🧠 Project Overview</h2>
+<br><h2 align="center">🧠 Project Overview</h2><br>
 
 This project delivers a practical and analytical exploration of **house price prediction** using real estate data from **King County, Washington, USA**. It represents the capstone effort of the **Data Analysis with Python** course by IBM, combining core concepts of data wrangling, statistical analysis, and machine learning into a cohesive workflow.
 
@@ -88,7 +88,7 @@ In addition to predictive modeling, the project emphasizes:
 
 ---
 
-<h2 align="center">🎯 Objectives</h2>
+<br><h2 align="center">🎯 Objectives</h2><br>
 
 - Load and preprocess the dataset using pandas  
 - Perform Exploratory Data Analysis (EDA)  
@@ -99,16 +99,22 @@ In addition to predictive modeling, the project emphasizes:
 
 ---
 
-<h2 align="center">📊 Dataset Info</h2>
+<br><h2 align="center">📊 Dataset Info</h2><br>
 
-- **Source**: House Sales in King County, USA  
-- **Records**: 21,613 rows × 21 columns  
-- **Target**: `price`  
-- **Features**: Includes `sqft_living`, `bedrooms`, `bathrooms`, `grade`, `location` (lat/long), etc.
+The dataset used in this project contains detailed records of house sales in **King County, Washington, USA**, including Seattle and surrounding areas. It serves as the foundation for building and evaluating regression models to predict housing prices based on various property attributes.
+
+-  **Source**: House Sales in King County, USA  
+-  **Records**: `21,613` observations × `21` features  
+-  **Target Variable**: `price` – the sale price of each house  
+-  **Key Features Include**:
+  - `sqft_living`: Living area in square feet  
+  - `bedrooms`, `bathrooms`: Number of rooms  
+  - `floors`, `waterfront`, `view`, `condition`, `grade`  
+> 🗂️ This dataset offers a rich variety of numerical and categorical features, making it ideal for applying regression techniques and exploring real-estate trends.
 
 ---
 
-<h2 align="center">🛠️ Workflow Breakdown</h2>
+<br><h2 align="center">🛠️ Workflow Breakdown</h2><br>
 
 1. Import libraries and load dataset  
 2. Clean data (handle missing values, types)  
@@ -121,7 +127,7 @@ In addition to predictive modeling, the project emphasizes:
 
 ---
 
-<h2 align="center">📈 Metrics & Results</h2>
+<br><h2 align="center">📈 Metrics & Results</h2><br>
 
 | Model                          | R² Score (Test) |
 |-------------------------------|-----------------|
@@ -130,10 +136,30 @@ In addition to predictive modeling, the project emphasizes:
 | Polynomial Ridge Regression   | ~0.75+          |
 
 > 📌 *Polynomial regression improved model fit, indicating non-linear feature effects on house pricing.*
+---
+
+<br><h2 align="center">📊 Visual Insights</h2><br>
+
+### 🧪 Question 4: Waterfront View vs. Price Outliers (Boxplot) 
+
+<p align="center">
+  <img src="boxplot.png" width="600" alt="Boxplot of House Prices">
+  <br>
+   <br> <i>Figure 1: Boxplot showing that waterfront properties have more extreme price outliers.</i>
+</p>
+
+### 📈 Question 5: Correlation between sqft_above and Price (Regplot)
+
+<br><p align="center">
+  <img src="regplot.png" width="600" alt="Regression Plot: Price vs Living Area">
+  <br>
+  <br>  <i>Figure 2: Regression plot showing a positive correlation between `sqft_above` and `price`.</i>
+</p>
+
 
 ---
 
-<h2 align="center">📉 Polynomial Ridge Regression</h2>
+<br><h2 align="center">📉 Polynomial Ridge Regression</h2><br>
 
 The final step applied a second-order polynomial transform to capture interaction effects among features. Ridge regularization helped avoid overfitting.
 
@@ -154,7 +180,7 @@ print("Polynomial Ridge R²:", r2)
 
 ---
 
-<h2 align="center">⚙️ Setup & Installation</h2>
+<br><h2 align="center">⚙️ Setup & Installation</h2><br>
 
 ```bash
 # Optional: create virtual environment
@@ -167,51 +193,63 @@ pip install numpy pandas matplotlib seaborn scikit-learn
 
 ---
 
-<h2 align="center">📚 Core Libraries Used</h2>
+<br><h2 align="center">📚 Core Libraries Used</h2><br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/Matplotlib-008080?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Matplotlib-008080?style=flat-square&logo=python&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="Scikit-learn"/>
 </p>
 
 ---
+<br><h2 align="center">🙏 Acknowledgments</h2><br>
 
-<h2 align="center">🙏 Acknowledgments</h2>
+<p align="center">
+  <img src="https://img.shields.io/badge/IBM®%20Course-Completed-blue?style=flat-square&logo=ibm&logoColor=white" alt="IBM Course Completed" />
+  <img src="https://img.shields.io/badge/Skills%20Network-Platform%20Used-purple?style=flat-square&logo=data:image/svg+xml;base64,...svgDataHere..." alt="Skills Network Badge" />
+  <img src="https://img.shields.io/badge/Instructor-Guided-success?style=flat-square&logo=book" alt="Instructor Guided" />
+</p>
 
-This project was completed as part of the **Data Analysis with Python** course offered by **IBM®** through the **Skills Network** platform.
+<p align="center">
+  This project was completed as part of the <strong>Data Analysis with Python</strong> course offered by <strong>IBM®</strong> through the <strong>Skills Network</strong> platform.
+</p>
 
-Special thanks to the **course instructors** for their clear explanations and practical examples, and to **IBM Skills Network** for providing a hands-on learning experience with real-world datasets and tools.
+<p align="center">
+  Special thanks to the <strong>course instructors</strong> for their clear explanations and practical examples, and to <strong>IBM Skills Network</strong> for providing a hands-on learning experience with real-world datasets and tools.
+</p>
 
-Your guidance played a key role in helping me apply data science techniques to solve real analytical problems. 🙌
+<p align="center">
+  Your guidance played a key role in helping me apply data science techniques to solve real analytical problems. 🙌
+</p>
+
 
 
 ---
 
+
 <br><h2 align="center">🤝 Contact & Contribution</h2><br>
 
-<p >
+<p align="center">
   <a href="mailto:maylzahid588@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-maylzahid588%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge">
+    <img src="https://img.shields.io/badge/Gmail-maylzahid588%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white" alt="Gmail Badge">
   </a>
   <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Hamayl%20Zahid-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+    <img src="https://img.shields.io/badge/LinkedIn-Hamayl%20Zahid-blue?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/hamaylzahid/house-price-regression-analysis/stargazers">
-    <img src="https://img.shields.io/github/stars/hamaylzahid/house-price-regression-analysis?style=for-the-badge&logo=github" alt="Star Badge">
+    <img src="https://img.shields.io/github/stars/hamaylzahid/house-price-regression-analysis?style=flat-square&logo=github" alt="Star Badge">
   </a>
   <a href="https://github.com/hamaylzahid/house-price-regression-analysis/fork">
-    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge&logo=github" alt="PRs Welcome Badge">
+    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square&logo=github" alt="PRs Welcome Badge">
   </a>
 </p>
 
 <p align="center">
-  Have feedback, want to collaborate, or just say hello?<br>
-  <strong>Let’s connect and build something amazing together!</strong>
+  Let’s connect and build something amazing together! 🚀
 </p>
 
 
@@ -271,16 +309,12 @@ Your guidance played a key role in helping me apply data science techniques to s
 </p>
 
 <p align="center">
-  <sub><i>Inspired by learning. Driven by analysis. Designed to inform.</i></sub>
+  <sub><i>Crafted with curiosity. Powered by data. Built to make insights matter.</i></sub>
 </p>
 
 <p align="center">
-  🔍 <b>Use this project to strengthen your Data Science portfolio</b>  
+  🔍 <b>Use this project to amplify your Data Science journey</b>  
   <br>
-  📦 Clone it, explore it, learn from it — and build something valuable.
-
-
-
-<b>Ready to explore the notebook?</b> Click [here](./House_Price_Regression_Analysis_Final.ipynb) to dive in.
-
+  📦 Fork it, explore it, refine it — and showcase your ability to turn data into decisions.
 </p>
+
